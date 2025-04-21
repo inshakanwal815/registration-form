@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Simple placeholders for icons using text -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="inshaform.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i> <!-- Font Awesome book icon -->
+                </div>
+                <div class="institute-info">
+                    <strong>ABC Institute of Technology</strong><br>
+                    No 124/3,<br>
+                    Pind Malkan road,<br>
+                    islamabad<br>
+                    Tel: 000 1231231     E-mail: ABC22222@gmail.com
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="ref-no">Ref No: 1155</div>
+                <div class="person-icon">
+                    <i class="fas fa-user"></i> <!-- Font Awesome user icon -->
+                </div>
+            </div>
+        </header>
+
+        <h1>Student Registration Form</h1>
+
+        <form action="#" method="post">
+
+            <div class="section-header">Student Information</div>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" value="insha kanwal">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="2002-11-18">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male" class="radio-label">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="radio-label">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" value="Pakistani">
+                </div>
+                <div class="form-group">
+                    <label for="contact-info">Contact Information:</label>
+                    <input type="text" id="contact-info" name="contact_info" value="abc2222@email.com / +92 1234 567890">
+                </div>
+            </div>
+
+            <div class="section-header">Parent/Guardian Information</div>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="parent-name">Parent/Guardian Name(s):</label>
+                    <input type="text" id="parent-name" name="parent_name" value="Rafaqat Hussain">
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to Student:</label>
+                    <input type="text" id="relationship" name="relationship" value="Mother">
+                </div>
+                <div class="form-group">
+                    <label for="parent-contact">Contact Information (Phone Number, Email):</label>
+                    <input type="text" id="parent-contact" name="parent_contact" value="abc222222@email.com / +92 00 0000000">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-contact">Emergency Contact Information:</label>
+                    <input type="text" id="emergency-contact" name="emergency_contact" value="abc / +92 1111 111111">
+                </div>
+            </div>
+
+            <div class="section-header">Education Information</div>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="school-name">School/Institution Name:</label>
+                    <input type="text" id="school-name" name="school_name" value="Mehran School System">
+                </div>
+                <div class="form-group">
+                    <label for="grad-date">Graduation Date: <span class="note">(if applicable)</span></label>
+                    <input type="text" id="grad-date" name="grad_date" value="July 2021">
+                </div>
+            </div>
+
+            <!-- Other Questions Section -->
+             <div class="form-section other-questions">
+                 <div class="form-group">
+                    <label for="how-hear">How did you hear about us?</label>
+                    <input type="text" id="how-hear" name="how_hear" value="Online Advertisement">
+                </div>
+                <div class="form-group">
+                    <label for="why-interested">Why are you interested in our program?</label>
+                    <textarea id="why-interested" name="why_interested" rows="3">.</textarea>
+                </div>
+             </div>
+
+             <!-- Agreement Section -->
+             <div class="form-section agreement">
+                 <div class="form-group">
+                     <label class="agreement-label">Are you Agree to the terms and conditions of enrollment?</label>
+                     <div class="agreement-input">
+                         <input type="checkbox" id="terms" name="terms" value="agreed" checked>
+                         <label for="terms" class="checkbox-label">
+                            <span class="thumb-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="thumb-down"><i class="fas fa-thumbs-down"></i></span>
+                         </label>
+                         <a href="#" class="note terms-link">View Terms and Conditions</a>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Signature Section -->
+             <div class="form-section signature">
+                  <div class="form-group">
+                     <label for="signature">Signature of the student and, if the student is a minor, a parent or guardian</label>
+                     <div class="signature-box">
+                         <!-- Placeholder for signature area -->
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Optional: Add a submit button (not in design but useful) -->
+             <!--
+             <div class="form-group submit-button">
+                 <button type="submit">Register</button>
+             </div>
+             -->
+
+        </form>
+    </div>
+</body>
+</html>
